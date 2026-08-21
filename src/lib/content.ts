@@ -20,29 +20,37 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     index: "01",
-    name: "Ship-or-Skip",
+    name: "Ship or Skip",
     description:
-      "An AI-assisted decision engine that turns a feature idea into a structured Ship, Refine, or Skip call.",
+      "An AI-assisted decision engine for product teams. It evaluates feature ideas, product changes, and strategic concepts through a structured framework, combining AI-generated reasoning with deterministic scoring to produce a Ship, Refine, or Skip verdict.",
     links: [
       { label: "Live", href: "https://shiporskipbuild.vercel.app/" },
-      { label: "Code", href: "https://github.com/joshuaearlsultan/ship-or-skip" },
+      {
+        label: "Code",
+        href: "https://github.com/joshuaearlsultan/ship-or-skip",
+      },
     ],
   },
   {
     index: "02",
     name: "Pulse",
     description:
-      "A discipleship tracker for church leaders, turning participation and follow-up into something they can actually see.",
+      "A leadership platform helping churches understand and care for their people. Built around discipleship visibility, member records, dashboards, and follow-up, giving church leaders a clearer view of where people are and where care may be needed.",
     links: [],
   },
   {
     index: "03",
     name: "Compass",
     description:
-      "A tool for leadership continuity, built around direction, continuity, and care as teams and seasons change.",
+      "A leadership platform for preserving direction, continuity, and care across ministries and changing seasons. A shared place for plans, activities, updates, meetings, decisions, and follow-through—helping important ministry context remain available when leaders change.",
     links: [],
   },
 ];
+
+export const ENGINEERING_INTRO = [
+  "I've spent more than a decade building mobile software across iOS, Android, React Native, and Flutter. My work has grown beyond application development into SDKs, authentication and security, architecture, CI/CD, reliability, and product thinking.",
+  "Today, mobile remains my professional foundation. Alongside it, I'm exploring product engineering and applied AI through the things I build and experiment with on my own.",
+] as const;
 
 export type EngineeringCategory = {
   title: string;
@@ -64,28 +72,37 @@ export const ENGINEERING_CATEGORIES: EngineeringCategory[] = [
   },
   {
     title: "Product",
-    items: ["Problem solving", "UX", "Product thinking", "End-to-end development"],
+    items: [
+      "Problem solving",
+      "UX",
+      "Product thinking",
+      "End-to-end development",
+    ],
   },
 ];
 
 export type WritingSample = {
   title: string;
   description: string;
+  href: string;
 };
 
-// Placeholder titles standing in for real published articles.
 export const WRITING_SAMPLES: WritingSample[] = [
   {
-    title: "Why the simplest fix is usually the right one",
-    description: "On resisting the urge to over-engineer a solution to a small problem.",
+    title: "Building Ship or Skip",
+    description:
+      "What creating an AI-assisted product validation tool taught me about building in the age of AI.",
+    href: "https://thesimpleengineer.substack.com/p/building-ship-or-skip",
   },
   {
-    title: "What fourteen years of mobile taught me about product thinking",
-    description: "Lessons from shipping and maintaining software long past launch day.",
+    title: "Simplicity Is Not a Shortcut (It’s a Responsibility)",
+    description: "Why simple solutions age better than complex ones.",
+    href: "https://thesimpleengineer.substack.com/p/simplicity-is-not-a-shortcut-its",
   },
   {
-    title: "Shipping less, and why that's the point",
-    description: "A case for narrower scope as a way of moving faster, not slower.",
+    title: "What 13 Years of Mobile Taught Me About Staying Relevant",
+    description: "Lessons on adapting, learning, and growing through change.",
+    href: "https://thesimpleengineer.substack.com/p/what-13-years-of-mobile-taught-me",
   },
 ];
 

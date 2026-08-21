@@ -1,6 +1,6 @@
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
-import { ENGINEERING_CATEGORIES } from "@/lib/content";
+import { ENGINEERING_CATEGORIES, ENGINEERING_INTRO } from "@/lib/content";
 
 export function EngineeringSection() {
   return (
@@ -14,8 +14,18 @@ export function EngineeringSection() {
           id="engineering-heading"
           index="02 — Engineering"
           title="Built on mobile. Growing beyond it."
-          description="Mobile is my professional foundation. This is the range of what that work has covered."
         />
+
+        <div className="mt-3 max-w-2xl space-y-4">
+          {ENGINEERING_INTRO.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="text-base leading-7 text-foreground-muted"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
 
         <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2">
           {ENGINEERING_CATEGORIES.map((category) => (

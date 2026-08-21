@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { WRITING_SAMPLES } from "@/lib/content";
@@ -21,7 +22,15 @@ export function WritingSection() {
           {WRITING_SAMPLES.map((sample) => (
             <li key={sample.title} className="border-t border-border pt-4">
               <h3 className="text-base font-semibold leading-6 text-foreground">
-                {sample.title}
+                <Link
+                  href={sample.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-4 hover:underline"
+                >
+                  {sample.title}
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </Link>
               </h3>
               <p className="mt-2 text-sm leading-6 text-foreground-muted">
                 {sample.description}
