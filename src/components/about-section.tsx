@@ -34,8 +34,8 @@ export function AboutSection() {
               products, and the SDKs and authentication systems that hold them
               together. Mobile is still where most of my working hours go.
               Alongside that, I write at The Simple Engineer and build small
-              products of my own, exploring product engineering and applied AI
-              firsthand. Still building. Still learning.
+              products of my own, learning through product engineering and
+              applied AI firsthand. Still building. Still learning.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
