@@ -3,7 +3,11 @@ import { Container } from "@/components/container";
 
 export function Hero() {
   return (
-    <section id="top" aria-label="Introduction" className="scroll-mt-24 py-16 sm:py-24">
+    <section
+      id="top"
+      aria-label="Introduction"
+      className="scroll-mt-24 py-16 sm:py-24"
+    >
       <Container>
         <p className="font-mono text-xs tracking-widest text-foreground-muted">
           Joshua Sultan
@@ -18,11 +22,11 @@ export function Hero() {
         </p>
 
         <p className="mt-5 max-w-2xl text-base leading-7 text-foreground-muted">
-          For more than fourteen years I&apos;ve built mobile software —
-          native iOS and Android, React Native, and the SDKs and
-          authentication systems underneath them. Mobile is still where most
-          of my working hours go. Product engineering and applied AI are
-          what I&apos;m exploring alongside it.
+          For more than fourteen years I&apos;ve built mobile software — native
+          iOS and Android, React Native, and the SDKs and authentication systems
+          underneath them. Mobile is still where most of my working hours go.
+          Alongside it, I&apos;m building and learning in product engineering
+          and applied AI.
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-4">

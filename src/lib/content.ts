@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
 
 export const ENGINEERING_INTRO = [
   "I've spent more than a decade building mobile software across iOS, Android, React Native, and Flutter. My work has grown beyond application development into SDKs, authentication and security, architecture, CI/CD, reliability, and product thinking.",
-  "Today, mobile remains my professional foundation. Alongside it, I'm exploring product engineering and applied AI through the things I build and experiment with on my own.",
+  "Today, mobile remains my professional foundation. Alongside it, I'm learning and experimenting with product engineering and applied AI through the things I build on my own.”",
 ] as const;
 
 export type EngineeringCategory = {
